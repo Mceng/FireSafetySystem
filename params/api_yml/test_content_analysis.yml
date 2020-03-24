@@ -1,0 +1,74 @@
+---
+MessageInfo:
+  dec: "统计分析"
+  parameters:
+    -
+      id: 0
+      info: 获取建筑列表下的校企
+      method: post
+      data:
+      url: /monitor3/basicData/getCustomerList
+      json:
+        buildingName: ""
+        target: "1"
+      header: header1
+
+    -
+      id: 1
+      info: 告警类型统计图
+      method: post
+      data:
+      url: /monitor3/statisticAnalysis/getTypeStatistic
+      json:
+        buildingId: ""
+        customerId: "7892661029798871040"
+        dayCount: 1
+        end: ""
+        start: ""
+      header: header1
+
+
+
+    -
+      id: 2
+      info: 告警处理耗时统计图
+      method: post
+      data:
+      url: /monitor3/statisticAnalysis/getProcessTimeConsuming
+      json:
+        buildingId: ""
+        customerId: "7892661029798871040"
+        dayCount: 1
+        end: ""
+        start: ""
+      header: header1
+
+    -
+      id: 3
+      info: 告警环比统计图
+      method: post
+      data:
+      url: /monitor3/statisticAnalysis/getAlarmRatio
+      json:
+        buildingId: "7892677051232747520"
+        customerId: "7892661029798871040"
+        month: 12
+        remark: 0
+        year: 2020
+      header: header1
+
+
+    -
+      id: 4
+      info: 告警次数排名表
+      method: post
+      data:
+      url: /monitor3/statisticAnalysis/getAlarmLevel
+      json:
+        buildingId: ""
+        customerId: "7892661029798871040"
+        dayCount: 1
+        end: ""
+        flag: true
+        start: ""
+      header: header1

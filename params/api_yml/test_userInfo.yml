@@ -1,0 +1,35 @@
+---
+MessageInfo:
+  dec: "个人中心"
+  parameters:
+    -
+      id: 0
+      info: 获取个人信息
+      method: post
+      data:
+      url: /monitor3/users/personalCen
+      json:
+        id: "7892661030262341632"
+      header: header1
+
+    -
+      id: 1
+      info: 获取公告
+      method: post
+      data:
+      url: /monitor3/notice/getNoticeForUser
+      json:
+        currPage: 1
+        pageSize: 10
+      header: header1
+
+    -
+      id: 2
+      info: 获取消息列表
+      method: post
+      data:
+      url: /monitor3/alarmNoticeRecord/getNoticList
+      json:
+        currPage: 1
+        pageSize: 10
+      header: header1

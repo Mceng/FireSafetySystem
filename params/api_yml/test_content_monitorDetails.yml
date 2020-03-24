@@ -1,0 +1,45 @@
+---
+MessageInfo:
+  dec: "监控中心>监控详情"
+  parameters:
+    -
+      id: 0
+      info: 获取某个建筑详情信息
+      method: post
+      data:
+      url: /monitor3/monitoringdetails/list
+      json:
+        id: "7892680376657313792"
+      header: header1
+
+    -
+      id: 1
+      info: 获取监测数据
+      method: post
+      data:
+      url: /monitor3/monitoringdetails/dataDetailslist
+      json:
+        connectStatusS: ""
+        currPage: 1
+        deviceStatusS: ""
+        end: ""
+        isAlarmBatteryS: ""
+        monitoringId: "7892680376657313792"
+        pageSize: 13
+        runStatusS: ""
+        showTime: "now"
+        start: ""
+      header: header1
+
+    -
+      id: 2
+      info: 获取监测趋势
+      method: post
+      data:
+      url: /monitor3/monitoringdetails/bigDatelist
+      json:
+        end: ""
+        monitoringId: "7892680376657313792"
+        showTime: "now"
+        start: ""
+      header: header1

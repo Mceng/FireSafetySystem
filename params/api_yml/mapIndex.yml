@@ -1,0 +1,96 @@
+---
+MapIndex:
+  dec: "大屏数据"
+  parameters:
+    -
+      id: 0
+      info: 获取大屏安全运行天数、历史警告次数、监测点总数、设备完好率
+      method: post
+      url: /monitor3/superviseIndex/totalOverview
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 1
+      info: 获取校企信息
+      method: post
+      url: /monitor3/superviseIndex/getCustomer
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 2
+      info: 获取校企信息列表
+      method: post
+      url: /monitor3/superviseIndex/getCustomerList
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 3
+      info: 获取校企信息监测点状态
+      method: post
+      url: /monitor3/superviseIndex/monitorAllStatus
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 4
+      info: 获取告警统计模块
+      method: post
+      url: /monitor3/superviseIndex/alarmTypeAndCount
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    - id: 5
+      info: 获取设备概况模块
+      method: post
+      url: /monitor3/superviseIndex/monitorGeneralSituation
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 6
+      info: 获取告警处理统计
+      method: post
+      url: /monitor3/superviseIndex/alarmProcessStatistics
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 7
+      info: 获取设备实时信息
+      method: post
+      url: /monitor3/superviseIndex/realTimeDeviceInfo3D
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+    -
+      id: 8
+      info: 获取实时监测信息
+      method: post
+      url: /monitor3/superviseIndex/realTimeMonitorInfo3D
+      data:
+      json:
+        customerId: "7892661029798871040"
+      header: header1
+
+
+
+
+

@@ -1,0 +1,44 @@
+---
+Info:
+  dec: "左侧导航"
+  parameters:
+    -
+      id: 0
+      info: 获取建筑列表
+      method: post
+      data:
+      url: /monitor3/basicData/getAList
+      json:
+        pageType: 0
+      header: header1
+
+    -
+      id: 1
+      info: 获取有告警的建筑ID
+      method: post
+      data:
+      url: /monitor3/basicData/getShowRedBuildIdList
+      json:
+        pageType: 1
+      header: header1
+
+    -
+      id: 2
+      info: 获取建筑信息列表
+      method: post
+      data:
+      url: /monitor3/basicData/getBuilding
+      json:
+        buildingName: ""
+        target: "0"
+      header: header1
+
+    -
+      id: 3
+      info: 获取建筑信息列表
+      method: post
+      data:
+      url: /monitor3/building/showBuilding
+      json:
+        id: "7892661029798871040"
+      header: header1

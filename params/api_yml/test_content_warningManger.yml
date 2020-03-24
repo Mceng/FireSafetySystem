@@ -1,0 +1,46 @@
+---
+MessageInfo:
+  dec: "告警管理"
+  parameters:
+    -
+      id: 0
+      info: 通过监测点id获取监测点详情
+      method: post
+      data:
+      url: /monitor3/alarmManager/getMonitorMessage
+      json:
+        id: "7892680376657313792"
+      header: header1
+
+    -
+      id: 1
+      info: 获取监测点告警详情告警数据
+      method: post
+      data:
+      url: /monitor3/alarmManager/getAlarmMessage
+      json:
+        currentPage: 1
+        dealType: [0, 1, 2]
+        endTime: "2020-03-18"
+        monitorId: "7892680376657313792"
+        pageSize: 13
+        startTime: "2020-01-04"
+        type: 2
+      header: header1
+
+    -
+      id: 2
+      info: 获取监测点处理表单
+      method: post
+      data:
+      url: /monitor3/alarmManager/getDealFrom
+      json:
+        currentPage: 1
+        dealType: [2, 3, 4, 8]
+        endTime: "2020-03-18"
+        monitorId: "7892680376657313792"
+        pageSize: 13
+        startTime: "2020-01-04"
+        type: 2
+      header: header1
+

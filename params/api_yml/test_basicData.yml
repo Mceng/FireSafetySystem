@@ -1,0 +1,65 @@
+---
+MessageInfo:
+  dec: "基础数据"
+  parameters:
+    -
+      id: 0
+      info: 新增建筑信息
+      method: post
+      data:
+      url: /monitor3/basicData/insertBuildInfo
+      json:
+        address: "北京市|北京市|东城区"
+        area: "北京市测试地址"
+        buildingName: "rw"
+        coverArea: "2222"
+        customerId: "7892661029798871040"
+        detailAddress: "22222"
+        enterprise: "艾伯通信"
+        onFloor: "3"
+        underFloor: "2"
+      header: header1
+
+    -
+      id: 1
+      info: 编辑建筑信息
+      method: post
+      data:
+      url: /monitor3/basicData/insertBuildInfo
+      json:
+        address: "北京市|北京市|东城区"
+        area: "北京市测试地址"
+        buildingName: "测试建筑名-0"
+        coverArea: "11"
+        customerId: "7892661029798871040"
+        id: "7930245824109936640"
+        detailAddress: "12"
+        enterprise: "艾伯通信"
+        onFloor: "10"
+        underFloor: "12"
+      header: header1
+
+
+    -
+      id: 2
+      info: 查看建筑信息
+      method: post
+      data:
+      url: /monitor3/basicData/insertBuildInfo
+      json:
+        buildingId: "7930245824109936640"
+      header: header1
+
+
+    -
+      id: 3
+      info: 设备绑定信息
+      method: post
+      data:
+      url: /monitor3/monitoring/checkDeviceList
+      json:
+        deptid: ""
+        devicetypeid: ""
+        searchKey: ""
+        type: ""
+      header: header1

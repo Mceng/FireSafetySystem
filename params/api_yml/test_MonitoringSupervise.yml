@@ -1,0 +1,91 @@
+---
+MessageInfo:
+  dec: "监控中心"
+  parameters:
+    -
+      id: 0
+      info: 通过校企获取监控中心界面的头信息
+      method: post
+      data:
+      url: /monitor3/enterprise/getMessageInfo
+      json:
+        id: "7892661029798871040"
+      header: header1
+
+    - id: 1
+      info: 通过校企获取监控设备信息
+      method: post
+      data:
+      url: /monitor3/enterprise/getMonitoringMessageInfo
+      json:
+        id: "7892661029798871040"
+      header: header1
+
+
+    - id: 2
+      info: 通过建筑获取实时监控及实时监测类型告警数据
+      method: post
+      data:
+      url: /monitor3/monitoring/realTimeMonitoring
+      json:
+        buildingId: "7892677051232747520"
+        customerId: "7892661029798871040"
+        pageType: 1
+      header: header1
+
+    - id: 3
+      info: 通过建筑获取实时告警处理情况
+      method: post
+      data:
+      url: /monitor3/alarmNoticeRecord/realTimeMonitoringDeal
+      json:
+        buildingId: "7892677051232747520"
+        customerId: "7892661029798871040"
+        pageType: 1
+      header: header1
+
+    - id: 4
+      info: 获取设备的卡片tab信息
+      method: post
+      data:
+      url: /monitor3/basicData/getMonitorType
+      json:
+        buildingId: "7892677051232747520"
+        customerId: "7892661029798871040"
+        target: 0
+      header: header1
+
+    - id: 5
+      info: 获取设备的卡片信息以及头部的建筑信息(也可通过搜索)
+      method: post
+      data:
+      url: /monitor3/basicData/getMonitorByMultipleMatching
+      json:
+        buildingId: "7892677051232747520"
+        connectStatus: []
+        customerId: "7892661029798871040"
+        deviceStatus: []
+        enabled: []
+        runStatus: []
+        searchName: ""
+        target: "0"
+        type: []
+      header: header1
+
+
+    - id: 6
+      info: 获取建筑id信息
+      method: post
+      data:
+      url: /monitor3/basicData/getShowRedBuildIdList
+      json:
+        pageType: 0
+      header: header1
+
+
+
+
+
+
+
+
